@@ -1,0 +1,20 @@
+/* Estilos generales y ajustes globales de la aplicación. */
+:root {
+  color-scheme: light;
+}
+
+body {
+  min-width: 320px;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+:focus-visible {
+  outline: 3px solid rgba(13, 110, 253, .45);
+  outline-offset: 2px;
+}

@@ -1,0 +1,26 @@
+/* Estilos de distribución para la tabla, el tablero y el historial. */
+#tabla-tickets tbody tr { cursor: pointer; }
+#tabla-tickets td,
+#tabla-tickets th { white-space: nowrap; }
+
+.historial {
+  border-left: 2px solid var(--bs-border-color);
+  margin-left: .4rem;
+  padding-left: 1rem;
+}
+
+.historial .item {
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+.historial .item::before {
+  content: "";
+  position: absolute;
+  left: -1.38rem;
+  top: .35rem;
+  width: .7rem;
+  height: .7rem;
+  border-radius: 50%;
+  background: var(--bs-primary);
+}

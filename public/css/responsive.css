@@ -1,0 +1,14 @@
+/* Ajustes para pantallas pequeñas. Bootstrap cubre la mayor parte del diseño. */
+@media (max-width: 575.98px) {
+  #tabla-tickets {
+    font-size: .875rem;
+  }
+
+  .kpi .n {
+    font-size: 1.5rem;
+  }
+
+  .card-footer {
+    align-items: flex-start !important;
+  }
+}
