@@ -1,0 +1,4 @@
+# Apache: todo lo que no sea un archivo existente pasa por index.php
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^ index.php [L]
