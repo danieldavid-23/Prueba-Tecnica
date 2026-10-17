@@ -210,3 +210,16 @@ prueba (API protegida por `X-API-Key`).
 ## Fuera de alcance
 
 No se implementaron los puntos extra (Docker, PHPUnit, exportación CSV, despliegue en línea).
+
+---
+
+## Preguntas frecuentes
+
+**¿Por qué no hay framework (Laravel, Symfony, etc.)?**
+La prueba pide PHP puro sin framework para demostrar que se entiende cómo funcionan el routing, la inyección de dependencias y el manejo de errores sin abstracciones externas.
+
+**¿Por qué la API key va en un `<meta>` de la página?**
+Porque la SPA necesita enviar `X-API-Key` en cada petición y el servidor la inyecta en el HTML al cargar. En un sistema real se usaría autenticación por sesión o token JWT por usuario.
+
+**¿Cómo reinicio los datos de prueba?**
+Vuelve a correr `C:\xampp\php\php.exe database\install.php`. Borra y recrea la base de datos con los 25 tickets y el historial original.
